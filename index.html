@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="SoulUp - Plataforma digital sustentável com Avatar Inteligente que recompensa ações conscientes dos usuários." />
+    <meta name="keywords" content="SoulUp, FIAP, sustentabilidade, gamificação, avatar inteligente, Prospera" />
+    <meta name="author" content="Equipe 1TDS FIAP" />
+    <title>SoulUp — Engajamento Sustentável com Avatar Inteligente</title>
+
+    <!-- Fontes Google (apenas link CSS, não é framework/biblioteca JS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/header-footer.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- COMMIT: INTEGRANTE_1 — Header com logo, menu e CTA -->
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="SoulUp - Página inicial">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6" />
+                    </svg>
+                </span>
+                Soul<span class="brand-up">Up</span>
+            </a>
+
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="solucao.html">Solução</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Equipe</a></li>
+                    <li><a href="contato.html" class="nav-cta">Falar conosco</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- COMMIT: INTEGRANTE_1 — Hero principal com call-to-action e prévia do avatar -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-content" data-reveal>
+                    <span class="badge">Challenge 2026 · Avatar Inteligente</span>
+                    <h1 id="hero-title">
+                        Transforme suas ações em
+                        <span class="highlight">impacto sustentável</span>
+                    </h1>
+                    <p class="lead">
+                        Conheça o SoulUp, a plataforma que conecta seu dia a dia digital a benefícios reais.
+                        Nosso Avatar Inteligente acompanha sua jornada, sugere missões sustentáveis e
+                        recompensa cada conquista com vantagens que fazem a diferença.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="avatar.html" class="btn btn-primary" aria-label="Conhecer o Avatar Inteligente">
+                            Conhecer o Avatar
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="solucao.html" class="btn btn-secondary">Como funciona</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="stat-number">+50k</div>
+                            <div class="stat-label">Usuários engajados</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-number">120t</div>
+                            <div class="stat-label">CO₂ evitado/ano</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-reveal>
+                    <div class="avatar-preview" aria-label="Prévia do avatar inteligente">
+                        <div class="avatar-preview-header">
+                            <div class="avatar-circle" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                                </svg>
+                            </div>
+                            <div class="avatar-info">
+                                <h4>Luma · Sua guia SoulUp</h4>
+                                <div class="status">● Online agora</div>
+                            </div>
+                        </div>
+
+                        <div class="avatar-message">
+                            Oi! Notei que você completou 3 missões hoje. Quer descobrir como acelerar suas
+                            recompensas com ações simples no seu dia?
+                        </div>
+
+                        <div class="avatar-suggestions">
+                            <button class="suggestion-chip" type="button">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                </svg>
+                                Quero economizar energia
+                            </button>
+                            <button class="suggestion-chip" type="button">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                                Missões do dia
+                            </button>
+                            <button class="suggestion-chip" type="button">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                    <path d="M4 22h16" />
+                                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                                </svg>
+                                Meu ranking
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMMIT: INTEGRANTE_1 — Bloco de features (3 colunas com benefícios) -->
+        <section class="features section" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-title" data-reveal>
+                    <span class="badge">Diferenciais</span>
+                    <h2 id="features-title">Por que escolher a SoulUp?</h2>
+                    <p>Uma experiência única que conecta sustentabilidade, gamificação e inteligência artificial.</p>
+                </div>
+
+                <div class="features-grid">
+                    <article class="feature-card" data-reveal>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6" />
+                            </svg>
+                        </div>
+                        <h3>Sustentabilidade real</h3>
+                        <p>Cada ação dentro do aplicativo gera impacto positivo mensurável no meio ambiente
+                            e na sua comunidade.</p>
+                    </article>
+
+                    <article class="feature-card" data-reveal>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                            </svg>
+                        </div>
+                        <h3>Avatar Inteligente</h3>
+                        <p>Luma, sua guia personalizada, acompanha sua evolução, sugere missões e gera
+                            conteúdo automaticamente para você.</p>
+                    </article>
+
+                    <article class="feature-card" data-reveal>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </div>
+                        <h3>Recompensas reais</h3>
+                        <p>Pontos que se convertem em descontos na fatura de energia, vouchers, experiências
+                            sustentáveis e muito mais.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMMIT: INTEGRANTE_1 — Bloco "Como funciona" com passo a passo -->
+        <section class="how-it-works" aria-labelledby="how-title">
+            <div class="container">
+                <div class="section-title" data-reveal>
+                    <span class="badge">Passo a passo</span>
+                    <h2 id="how-title">Como funciona</h2>
+                    <p>Em poucos passos você começa sua jornada sustentável com a SoulUp.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step" data-reveal>
+                        <div class="step-number">1</div>
+                        <h4>Crie sua conta</h4>
+                        <p>Cadastro rápido para entrar na comunidade SoulUp.</p>
+                    </div>
+                    <div class="step" data-reveal>
+                        <div class="step-number">2</div>
+                        <h4>Converse com Luma</h4>
+                        <p>O avatar conhece seus interesses e cria um plano personalizado.</p>
+                    </div>
+                    <div class="step" data-reveal>
+                        <div class="step-number">3</div>
+                        <h4>Cumpra missões</h4>
+                        <p>Ações sustentáveis viram pontos no seu perfil.</p>
+                    </div>
+                    <div class="step" data-reveal>
+                        <div class="step-number">4</div>
+                        <h4>Resgate benefícios</h4>
+                        <p>Troque seus pontos por recompensas reais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMMIT: INTEGRANTE_1 — Banner CTA final -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content" data-reveal>
+                    <h2 id="cta-title">Pronto para começar sua jornada sustentável?</h2>
+                    <p>Junte-se a milhares de pessoas que já transformam ações conscientes em recompensas reais.</p>
+                    <a href="avatar.html" class="btn btn-accent">Experimentar o Avatar agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- COMMIT: INTEGRANTE_1 — Footer compartilhado entre todas as páginas -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>SoulUp</h3>
+                    <p>Uma plataforma da Prospera que conecta engajamento digital a benefícios reais e impacto
+                        ambiental positivo.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Plataforma</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="solucao.html">Solução</a></li>
+                        <li><a href="avatar.html">Demo do Avatar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="integrantes.html">Equipe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Parceria</h4>
+                    <ul>
+                        <li><a href="https://www.meuprospera.com.br/soul-up/" target="_blank"
+                                rel="noopener noreferrer">Prospera</a></li>
+                        <li><a href="https://www.fiap.com.br" target="_blank" rel="noopener noreferrer">FIAP</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© <span data-current-year>2026</span> SoulUp · Challenge FIAP 2026 · Projeto acadêmico</div>
+                <span class="badge-footer">1TDS Fevereiro</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

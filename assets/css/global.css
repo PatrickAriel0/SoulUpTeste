@@ -1,0 +1,357 @@
+/* ==========================================================================
+   GLOBAL.CSS - Variáveis, reset, tipografia e utilitários
+   Projeto: SoulUp - Avatar Inteligente | Challenge 2026 FIAP
+   COMMIT: INTEGRANTE_1 - Estrutura base e identidade visual do projeto
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. VARIÁVEIS CSS (Paleta verde sustentável + tipografia)
+   -------------------------------------------------------------------------- */
+:root {
+    /* Cores principais (verde sustentável) */
+    --color-primary: #2D6A4F;
+    --color-primary-dark: #1B4332;
+    --color-primary-light: #52B788;
+    --color-secondary: #B7E4C7;
+    --color-bg-soft: #D8F3DC;
+
+    /* Cores neutras */
+    --color-white: #FFFFFF;
+    --color-bg: #FAFAFA;
+    --color-bg-alt: #F1F3F5;
+    --color-border: #DEE2E6;
+    --color-text: #495057;
+    --color-text-dark: #212529;
+    --color-text-muted: #6C757D;
+
+    /* Cores de destaque */
+    --color-accent: #FFB703;
+    --color-success: #2A9D8F;
+    --color-danger: #D62828;
+    --color-info: #277DA1;
+
+    /* Tipografia */
+    --font-heading: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    --font-body: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+
+    /* Tamanhos */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.5rem;
+    --fs-4xl: 3rem;
+
+    /* Espaçamentos */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+
+    /* Bordas e sombras */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+
+    --shadow-sm: 0 2px 4px rgba(27, 67, 50, 0.08);
+    --shadow-md: 0 4px 12px rgba(27, 67, 50, 0.10);
+    --shadow-lg: 0 10px 30px rgba(27, 67, 50, 0.15);
+
+    /* Transições */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Layout */
+    --container-max: 1280px;
+    --header-height: 80px;
+}
+
+/* --------------------------------------------------------------------------
+   2. RESET / NORMALIZE
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-light);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* --------------------------------------------------------------------------
+   3. TIPOGRAFIA
+   -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text-dark);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--fs-3xl);
+    margin-bottom: var(--space-md);
+}
+
+h2 {
+    font-size: var(--fs-2xl);
+    margin-bottom: var(--space-md);
+}
+
+h3 {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-sm);
+}
+
+h4 {
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-sm);
+}
+
+p {
+    margin-bottom: var(--space-sm);
+}
+
+/* --------------------------------------------------------------------------
+   4. UTILITÁRIOS (container, seções, botões, badges)
+   -------------------------------------------------------------------------- */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.section {
+    padding: var(--space-3xl) 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.section-title h2 {
+    font-size: var(--fs-3xl);
+    margin-bottom: var(--space-sm);
+}
+
+.section-title p {
+    color: var(--color-text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: var(--fs-md);
+}
+
+/* Botões */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: 0.875rem 1.75rem;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-size: var(--fs-base);
+    transition: all var(--transition-base);
+    border: 2px solid transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background-color: var(--color-accent);
+    color: var(--color-text-dark);
+}
+
+.btn-accent:hover {
+    background-color: #E8A102;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.875rem;
+    background-color: var(--color-bg-soft);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+/* Card base */
+.card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Backgrounds alternativos */
+.bg-soft {
+    background-color: var(--color-bg-soft);
+}
+
+.bg-alt {
+    background-color: var(--color-bg-alt);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3 {
+    color: var(--color-white);
+}
+
+/* Texto centralizado */
+.text-center {
+    text-align: center;
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Visually hidden (acessibilidade) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Skip link (acessibilidade) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-xs) var(--space-sm);
+    z-index: 1000;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 0;
+    color: var(--color-white);
+}
